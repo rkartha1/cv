@@ -1,0 +1,188 @@
+body {
+    text-align:center;
+    margin:0;
+    font-family: 'Spectral', serif;
+    color: rgb(94, 81, 214);
+    font-size: 20px;
+}
+nav {
+    background-color: #3d5a80;
+    padding: 10px;
+    border-bottom: solid black 5px;
+    display: flex;
+    justify-content: right;
+}
+
+hr {
+    color: black;
+    width: 0px;
+}
+nav a {
+    color: #293241;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #3d5a80;
+    color:azure;
+}
+
+.splash {
+    background-color: #98c1d9;
+    padding: 200px 0 0 0;
+}
+
+.img {
+    position: absolute;
+    display: block;
+    top: 0;
+    border-radius: 50%; /* Make the images circular */
+    overflow: hidden; /* Ensure the circular shape is maintained */
+}
+
+.nonabsolute {
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container {
+    position:relative;
+}
+
+.img:nth-child(2) {
+    left: 1040px;
+}
+
+.content {
+    font-family: 'Nunito', sans-serif;
+    color: #293241;
+    font-size: 20px;
+    background-color: #98c1d9;
+    padding: 200px 0 0 0;
+}
+
+
+h1 {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 60px;
+    color:#03045E;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color:#03045E;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: white;
+    color: #98c1d9;
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content:center;
+}
+
+footer a{
+    color:#ee6c4d;
+    padding: 8px 16px;
+}
+
+footer a:hover {
+    background-color:#e0fbfc;
+    color:#03045E;
+}
+
+a {
+    color: palevioletred;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+.one-col {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    justify-content: center;
+}
+
+.three-col {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.3333% - 10px);
+    background-color: #e0fbfc;
+    border-radius: 10px;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-description {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #666;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+dl {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+dt {
+    display: flex;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+input {
+    color: rgb(203, 174, 236);
+    font-size: 15px;
+}
+
+textarea {
+    color:aquamarine;
+    font-size: 15px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .three-col {
+        flex-wrap: wrap; /* Allow cards to wrap onto the next line on small screens */
+        justify-content: flex-start; /* Align cards to the left on small screens */
+    }
+
+    .card {
+        width: 100%; /* Each card takes up the full width on small screens */
+        margin-bottom: 10px; /* Reduce space between cards vertically on small screens */
+    }
+}
+
